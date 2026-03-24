@@ -80,3 +80,11 @@ A daily-use account that charges a fee for every withdrawal.
 | **Savings Logic** (Interest calculation) | 25% |
 | **Checking Logic** (Fee implementation & Overriding) | 35% |
 | **Code Quality** (Use of `super`, no negative balances) | 20% |
+
+## 🔍 Troubleshooting Your Grade
+If your score is **0/100**, check the following:
+
+1. **❌ Build Failed**: Your code has a syntax error (missing semicolon, bracket, etc.). Check the "Build and Test" logs in the Actions tab.
+2. **❌ Encapsulation**: You likely made the `balance` field `public`. It must be `protected`.
+3. **❌ Checking/Savings Logic**: Ensure your math matches the formulas in the Step-by-Step guide.
+4. **❌ No Tests Found**: Do not rename the test classes or delete the `src/test` folder. The grader needs those files to verify your work.
